@@ -10,7 +10,7 @@ function tipCalculate() {
   const numberPeople = parseInt(numberOfPeopleInput.value);
 
   if (!isNaN(bill) && !isNaN(numberPeople) && numberPeople > 0) {
-    const billSelected = parseFloat(this.textContext.replace("%", "")) / 100;
+    const billSelected = parseFloat(this.textContent.replace("%", "")) / 100;
     const billPerPerson = (bill * billSelected) / numberPeople;
     const totalPerPerson = bill / numberPeople + billPerPerson;
 
