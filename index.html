@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/logo.svg" alt="" />
+      <div class="card">
+        <div class="bill_div">
+          <label for="">Bill</label>
+          <input type="number" placeholder="bill" />
+          <i
+            class="fa-solid fa-dollar-sign icon_dollar"
+            style="color: #959aa3"
+          ></i>
+        </div>
+        <div class="select_button">
+          <h3>
+            Select Tip
+            <i class="fa-solid fa-percent" style="color: #969aa2"></i>
+          </h3>
+          <div class="buttons">
+            <button id="button">5%</button>
+            <button id="button">10%</button>
+            <button id="button">15%</button>
+            <button id="button">25%</button>
+            <button id="button">50%</button>
+            <input type="number" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="number_people">
+          <label>Number Of People</label>
+          <input type="number" placeholder="Number of People" />
+          <i class="fa-solid fa-user icon_profile" style="color: #b2b4b8"></i>
+        </div>
+
+        <div class="result">
+          <div class="child">
+            <div class="amount">
+              <span>Tip Amount</span>
+              <span style="color: #7f9d9f">/person</span>
+            </div>
+            <div class="price">
+              <span style="color: #26c2ae">$4.44</span>
+            </div>
+          </div>
+
+          <div class="child_2">
+            <div class="amount">
+              <span>Total</span>
+              <span style="color: #7f9d9f">/person</span>
+            </div>
+            <div class="price">
+              <span style="color: #26c2ae">$34.4</span>
+            </div>
+          </div>
+          <div class="reset_btn">
+            <button class="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
